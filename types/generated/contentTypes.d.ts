@@ -397,7 +397,6 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
 export interface ApiCartCart extends Struct.CollectionTypeSchema {
   collectionName: 'carts';
   info: {
-    description: '';
     displayName: 'Cart';
     pluralName: 'carts';
     singularName: 'cart';
@@ -409,7 +408,7 @@ export interface ApiCartCart extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    EmailUser: Schema.Attribute.Email;
+    EmailUser: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::cart.cart'> &
       Schema.Attribute.Private;

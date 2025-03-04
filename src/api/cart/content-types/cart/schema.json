@@ -4,8 +4,7 @@
   "info": {
     "singularName": "cart",
     "pluralName": "carts",
-    "displayName": "Cart",
-    "description": ""
+    "displayName": "Cart"
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +14,7 @@
       "type": "string"
     },
     "EmailUser": {
-      "type": "email"
+      "type": "string"
     },
     "products": {
       "type": "relation",
